@@ -1,138 +1,71 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<x-layout.main>
+<!------Header------>
 
-    <title>HZ HBO-ICT</title>
 
-    {{-- Compiled assets --}}
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-</head>
-<body>
-{{-- Navigation bar --}}
-<nav class="navbar is-primary  has-text-white" >
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" class="navbar-item">
-                <strong><i class="fas fa-graduation-cap"></i> HZ</strong>
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-start">
-                <a href="{{ route('home') }}"
-                   class="navbar-item {{ Request::route()->getName() === 'home' ? "is-active" : "" }}">
-                    Home
-                </a>
-            </div>
-        </div>
-    </div>
-</nav>
+<!------Welcome------>
+<table>
+    <tr>
+        <th colspan="2">
+            <h1>
+                Welcome to my webpage! <br> Feel free to look around!
+            </h1>
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2">(Use the top bar to navigate around)</th>
+    </tr>
 
-{{-- Content --}}
-<section class="hero  is-medium  is-bold is-primary">
-    <div class="hero-body" style="
-            background: url('https://www.hz.nl/imager/uploads/images/3.-Werk-en-studie/Headers/docent-coacht-studenten-003_c8fa470484be7b69be5daae77a1602c5.jpg') no-repeat center center;
-            background-size: cover;"
-    ></div>
-</section>
+    <!------Paragraph 1------>
 
-<section class="section">
-    <div class="container">
-        <div class="columns">
+    <tr>
+        <th width="50%">
+            <details>
+                <summary>Click here for a short Motivation!</summary>
+                <h2>Why did I choose IT?</h2> <br>
+                I chose IT for multiple reasons.
+                First of I love the computer as a machine I think it's so intreguing!
+                The develepment of the computer went so fast and branched out into so many things!
+                Like game computers and later the merge with mobile phones. <br> <br>
 
-            <div class="column is-8-desktop is-12-tablet">
+                But thats just hardware! my love for the software side came from (just like a lot of other people) video
+                games!
+                The things they make in videogames are so impressive to me and they keep improving!
+                I know a lot of it visual design but a lot of it is code aswell! <br> <br>
 
-                <div class="content">
-                    <h1>Welcome to the HZ HBO-ICT template app.</h1>
-                    <p>
-                        Posuere porttitor natoque velit duis penatibus fermentum dignissim ut? Vel vel mi purus
-                        tempor nec conubia platea venenatis. Mauris pharetra auctor magnis, vehicula integer risus
-                        taciti gravida semper fames! Eu fermentum lorem accumsan litora. Consequat dapibus interdum
-                        primis lorem. Convallis integer mi suscipit tempor. Ad tincidunt placerat at. Sagittis
-                        pulvinar consectetur commodo, placerat varius sociosqu egestas felis! Curae; dictumst porta
-                        tempus. Nisi nec morbi netus euismod egestas proin sed tempor. Nam feugiat ante ante.
-                        Conubia vehicula tincidunt facilisis quisque risus senectus convallis. Eget at feugiat vel
-                        nisi. Tortor, facilisis neque elementum ultricies blandit amet orci dictumst eu mi molestie.
-                        Libero vulputate porta proin volutpat suspendisse aenean aenean facilisi ut primis!
-                        Venenatis elementum auctor neque urna et facilisis vulputate erat lorem habitasse libero!
-                        Risus ornare quam rutrum praesent blandit congue aliquet mauris.
-                    </p>
-                    <p>
-                        Elementum orci eget vel adipiscing tempor malesuada? Sollicitudin euismod nunc feugiat
-                        accumsan accumsan condimentum nulla pellentesque sagittis habitasse suspendisse praesent?
-                        Lectus proin justo vulputate tristique duis metus, est pellentesque blandit quam pharetra.
-                        Maecenas tincidunt litora mauris mollis ornare dictum nec placerat lectus massa lobortis
-                        auctor. Hac feugiat dolor, ac ridiculus mi adipiscing aptent elementum suspendisse augue
-                        rutrum! Habitasse a consequat ornare dictumst integer dis porta.
-                    </p>
-                    <p>
-                        Blandit mollis felis gravida sem ad venenatis ut a lacus! Magna odio netus, torquent rhoncus
-                        fames velit. Adipiscing libero, class cursus ipsum penatibus enim mollis netus. Sociis
-                        luctus eros sapien platea parturient fringilla. Senectus purus tincidunt laoreet purus
-                        praesent. Accumsan pulvinar tincidunt gravida malesuada senectus proin, elit cubilia
-                        lobortis quisque tellus? Torquent dis natoque sapien natoque sagittis conubia pulvinar risus
-                        elementum hac adipiscing arcu. Sem nisl fusce phasellus adipiscing pretium eget hendrerit
-                        proin non. Vestibulum lacus magna, commodo volutpat.
-                    </p>
-                    <p>
-                        Vivamus ridiculus amet arcu. Magnis venenatis vehicula venenatis molestie molestie proin sed
-                        blandit, inceptos volutpat. Auctor auctor massa sodales ipsum. Congue est quisque porta?
-                        Porta phasellus sem torquent ad feugiat sollicitudin nisi tempor tortor habitasse. Eros
-                        condimentum enim blandit pulvinar. Justo aenean, taciti curae; diam volutpat cubilia ante
-                        vestibulum. Augue penatibus phasellus inceptos tortor convallis ridiculus at ad. Nisl
-                        curabitur vel gravida, montes sit velit pellentesque. Sem, dapibus maecenas urna lectus
-                        mauris quisque nibh accumsan amet curabitur egestas dolor. Sagittis montes magnis quam
-                        fringilla accumsan bibendum. Nisl, a laoreet himenaeos sapien lorem quisque taciti lacus
-                        elit mauris. Mollis eleifend montes commodo? Accumsan nullam venenatis malesuada netus metus
-                        sociosqu magnis velit. Rhoncus lacus tempus praesent fermentum netus ullamcorper dolor
-                        integer nulla.
-                    </p>
-                    <p>
-                        Habitasse suspendisse egestas vestibulum pellentesque per leo enim metus donec ad. Hac metus
-                        convallis nibh eget, parturient dis elementum posuere. Felis, ultricies fusce est cubilia
-                        facilisis odio id velit dapibus suspendisse. Erat praesent nullam aliquam. Rutrum commodo
-                        eget malesuada per montes, curae; senectus convallis sociis per. Risus mattis justo vivamus
-                        lorem bibendum aenean eleifend facilisi, suscipit consectetur libero litora. Interdum?
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                For more info and why I chose HZ <a href="/blog posts/studychoice.html">Click Here!</a>
+            </details>
+        </th>
 
-{{-- Footer --}}
-<footer class="footer">
-    <div class="container">
-        <div class="columns is-multiline">
+        <!------Paragraph 2------>
 
-            <div class="column has-text-centered">
-                <div>
-                    <a href="/" class="link">Home</a>
-                </div>
-            </div>
+        <th width="50%">
+            <details>
+                <summary>Click here for my vision in short!</summary>
+                <h2>What do I hope for my future?</h2> <br>
+                Ofcourse like most people I wish for a bright future for myself!
+                I hope to one day work a fully remote IT job!
+                The freedom it gives make for me life awesome and is the absolute dream!
+                I love the flexibility of working remote whether at home in the garden, a home office or out of the country to
+                travel!
+                You'll be able to do the work you love! <br> <br>
 
-            <div class="column has-text-centered">
-                <div>
-                    <a href="https://opensource.org/licenses/MIT" class="link">
-                        <i class="fa fa-balance-scale" aria-hidden="true"></i> License: MIT
-                    </a>
-                </div>
-            </div>
+                The work I love?
+                How do I know this is the work I love?!
+                To be completely honest I don't....
+                However I do love solving puzzles and creating stuff!
+                But that you can read in my motivation blog! ;) <br> <br>
+                For more about my future <a href="/blog posts/studychoice.html">Click Here!</a>
 
-        </div>
 
-        <div class="content is-small has-text-centered">
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a> | adapted by <a href="https://github.com/dwaard">BugSlayer</a></p>
-            <p>PROJECT FOOTER HERE</p>
-        </div>
-    </div>
-</footer>
+            </details>
+        </th>
 
-</body>
-</html>
+    </tr>
+    <tr>
+        <th colspan="2">
+            <img class="boot" src="fotos/movingboattransparant.gif" alt="bootje">
+        </th>
+    </tr>
+</table>
+
+</x-layout.main>

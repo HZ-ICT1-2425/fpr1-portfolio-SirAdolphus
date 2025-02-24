@@ -310,7 +310,7 @@ body{
 .mainSection {
     animation: onLoad;
     animation-duration: 4s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     background-color: #cf0f0f;
     position: relative;
     border-color: #cf0f0f;
@@ -322,7 +322,7 @@ body{
 }
 .secondarySection {
     animation: onLoad;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     animation-duration: 4s;
     animation-fill-mode: both;
     background-color: #cf0f0f;

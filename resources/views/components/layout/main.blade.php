@@ -38,11 +38,11 @@
             </script>
 
         </li>
-        <li class="nav"><a href="/">Home</a></li>
-        <li class="nav"><a href="profile">Profile</a></li>
-        <li class="nav"><a href="blog">Blog</a></li>
-        <li class="nav"><a href="dashboard">Dashboard</a></li>
-        <li class="nav"><a href="faq">FAQ</a></li>
+        <li class="nav"><a href="{{route('welcome')}}">Home</a></li>
+        <li class="nav"><a href="{{route('profile')}}">Profile</a></li>
+        <li class="nav"><a href="{{route('blog')}}">Blog</a></li>
+        <li class="nav"><a href="{{route('dashboard')}}">Dashboard</a></li>
+        <li class="nav"><a href="{{route('faq')}}">FAQ</a></li>
         <a href="https://hz.nl/"><img style="float: right;" id="groenLogoMagEigenlijkNiet"
                                       src="/fotos/hzlogo-Photoroom.png" alt="hzLogo" class="illegaalgroenlogo"></a>
         <li style="float: right;" class="nav"><button class="nav" onclick="changePhoto()">Hugo Button!</button></li>

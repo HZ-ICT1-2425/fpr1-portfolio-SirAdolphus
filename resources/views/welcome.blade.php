@@ -39,7 +39,7 @@
             <br>
             The work I love?
             How do I know this is the work I love?!
-            To be completely honest I don't....
+            To be completely honest I don't...
             However I do love solving puzzles and creating stuff!
             But that you can read in my motivation blog! ;) <br> <br>
             For more about my future <a href="">Click Here!</a>

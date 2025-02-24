@@ -38,11 +38,11 @@
             </script>
 
         </li>
-        <li class="nav"><a href="index.html">Home</a></li>
-        <li class="nav"><a href="profile.html">Profile</a></li>
-        <li class="nav"><a class="active" href="blog.html">Blog</a></li>
-        <li class="nav"><a href="dashboard.html">Dashboard</a></li>
-        <li class="nav"><a href="faq.html">FAQ</a></li>
+        <li class="nav"><a href="/">Home</a></li>
+        <li class="nav"><a href="profile">Profile</a></li>
+        <li class="nav"><a href="blog">Blog</a></li>
+        <li class="nav"><a href="dashboard">Dashboard</a></li>
+        <li class="nav"><a href="faq">FAQ</a></li>
         <a href="https://hz.nl/"><img style="float: right;" id="groenLogoMagEigenlijkNiet"
                                       src="/fotos/hzlogo-Photoroom.png" alt="hzLogo" class="illegaalgroenlogo"></a>
         <li style="float: right;" class="nav"><button class="nav" onclick="changePhoto()">Hugo Button!</button></li>

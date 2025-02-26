@@ -42,7 +42,7 @@
         </li>
         <li class="nav"><a href="{{route('welcome')}}">Home</a></li>
         <li class="nav"><a href="{{route('profile')}}">Profile</a></li>
-        <li class="nav"><a href="{{route('posts')}}">Blog</a></li>
+        <li class="nav"><a href="{{route('posts.index')}}">Blog</a></li>
         <li class="nav"><a href="{{route('dashboard')}}">Dashboard</a></li>
         <li class="nav"><a href="{{route('faq')}}">FAQ</a></li>
         <a href="https://hz.nl/"><img style="float: right;" id="groenLogoMagEigenlijkNiet"

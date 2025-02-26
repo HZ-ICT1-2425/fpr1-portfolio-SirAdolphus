@@ -1,5 +1,5 @@
 <x-layout.main>
-    <form action="{{ route('blogs.store') }}" method="POST" class="mainSection">
+    <form action="{{ route('posts.store') }}" method="POST" class="mainSection">
         @csrf
         <div class="secondarySection">
             <label for="title" class="niceYellow">Title</label>

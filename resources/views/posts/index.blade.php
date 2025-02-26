@@ -8,10 +8,10 @@
 <main>
 
     <div class="navbar-end">
-        <a href="{{ route('blogs.create') }}" class="button is-primary">Create a New Blog Post</a>
+        <a href="{{ route('posts.create') }}" class="styledButtonInverted">Create a New Blog Post</a>
     </div>
-        @foreach($blogs as $blog)
-            <x-blogs.blog-list :blog="$blog"></x-blogs.blog-list>
+        @foreach($posts as $post)
+            <x-blogs.blog-list :post="$post"></x-blogs.blog-list>
         @endforeach
 </main>
 

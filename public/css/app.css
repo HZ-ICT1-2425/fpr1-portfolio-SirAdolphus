@@ -352,6 +352,19 @@ body{
     cursor: pointer;
 }
 
+.styledButtonInverted {
+    display: inline-block;
+    background-color: #cf0f0f;
+    color: #d3d0a0;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
 .styledButton:hover {
     background-color: #cac8aa;
 }

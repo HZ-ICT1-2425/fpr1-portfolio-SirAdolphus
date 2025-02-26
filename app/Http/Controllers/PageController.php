@@ -18,8 +18,9 @@ class PageController extends Controller
         return view('dashboard');
     }
 
+    // TODO: Remove it
     public function blog() {
-        return view('blog');
+        return view('posts.index');
     }
 
     public function faq() {

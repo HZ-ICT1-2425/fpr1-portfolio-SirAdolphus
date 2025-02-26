@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset("css/app.css") }}">
+    <!------TODO: Make sure to use the asset function in case something goes wrong with relative paths ------>
     <link rel="icon" href="fotos/website.icon.jpg" type="image">
 </head>
 
@@ -25,6 +26,7 @@
             </div>
             <span style="font-size:30px;cursor:pointer;color:#5ba33e;" onclick="openNav()">&#9776; </span>
 
+            <!------TODO: Should be on the bottom of the file ------>
             <script>
                 function openNav() {
                     document.getElementById("mySidenav").style.width = "250px";
@@ -40,7 +42,7 @@
         </li>
         <li class="nav"><a href="{{route('welcome')}}">Home</a></li>
         <li class="nav"><a href="{{route('profile')}}">Profile</a></li>
-        <li class="nav"><a href="{{route('blog')}}">Blog</a></li>
+        <li class="nav"><a href="{{route('posts')}}">Blog</a></li>
         <li class="nav"><a href="{{route('dashboard')}}">Dashboard</a></li>
         <li class="nav"><a href="{{route('faq')}}">FAQ</a></li>
         <a href="https://hz.nl/"><img style="float: right;" id="groenLogoMagEigenlijkNiet"

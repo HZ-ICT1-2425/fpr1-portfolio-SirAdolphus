@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Blog>
  */
-class BlogFactory extends Factory
+class PostFactory extends Factory
 {
     /**
      * Define the model's default state.

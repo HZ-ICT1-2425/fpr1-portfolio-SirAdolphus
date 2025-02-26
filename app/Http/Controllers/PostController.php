@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Blog;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -12,14 +12,14 @@ class PostController extends Controller
     {
         // TODO: posts should be posts => posts.index/posts.show...
         return view('posts.index', [
-            'blogs' => Blog::all()
+            'posts' => Post::all()
         ]);
     }
 
-    public function show(Blog $blog)
+    public function show(Post $post)
     {
         return view('posts.show', [
-            'blog' => $blog
+            'post' => $post
         ]);
     }
 
@@ -32,15 +32,47 @@ class PostController extends Controller
             'body' => 'required',
         ]);
 
-        // Create a new Blog model object, mass-assign its attributes with
+        // Create a new Post model object, mass-assign its attributes with
         // the validated data and store it to the database
-        $blog = Blog::create($validated);
+        $blog = Post::create($validated);
 
         // Redirect to the blog index page
-        return redirect()->route('posts');
+        return redirect()->route('posts.index');
     }
 
     public function create(){
         return view('posts.create');
+    }
+
+    public function edit(Post $post){
+        return view('posts.edit',[
+            'post' => $post
+        ]);
+    }
+
+    public function update(Request $request, Post $post)
+    {
+        $validated = $request->validate([
+            'title' => 'required',
+            'slug' => 'required',
+            'body' => 'required',
+        ]);
+
+        $post->update($validated);
+
+        return redirect()->route('posts.index');
+    }
+
+    public function delete(Post $post){
+        return view('posts.destroy',[
+            'post' => $post
+        ]);
+    }
+
+    public function destroy(Post $post)
+    {
+        $post->delete();
+
+        return redirect()->route('posts.index');
     }
 }
